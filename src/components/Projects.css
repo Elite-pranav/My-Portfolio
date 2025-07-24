@@ -1,26 +1,34 @@
 .projects-section {
-  background-color: #1a1a1a;
-  color: white;
-  padding: 3rem 5rem;
-  animation: slideInUp 0.6s ease-out forwards;
-  font-family: 'DotGothic16', monospace;
+  background-color: #1a1a1a; /* Set background color for projects section */
+  color: white; /* Set text color to white */
+  padding: 2rem 2rem; /* Add padding around the section */
+  animation: slideInUp 0.6s ease-out forwards; /* Animate section on load */
+  font-family: 'DotGothic16', monospace; /* Set font style */
+  margin-top: 40px; /* Space above section */
+  margin-left: 120px; /* Space to the left */
+  margin-right: 120px; /* Space to the right */
+  border-radius: 12px; /* Rounded corners */
+  margin-bottom: 40px; /* Space below section */
 }
 
 @keyframes slideInUp {
   from {
-    transform: translateY(100%);
-    opacity: 0;
+    transform: translateY(100%); /* Start below the viewport */
+    opacity: 0; /* Start invisible */
   }
   to {
-    transform: translateY(0%);
-    opacity: 1;
+    transform: translateY(0%); /* End at original position */
+    opacity: 1; /* End fully visible */
   }
 }
 
 .project-card {
-  background-color: #2e2e2e;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: #2e2e2e; /* Set background color for project card */
+  padding: 1.5rem; /* Add padding inside card */
+  margin-bottom: 2rem; /* Space below card */
+  margin-top: 2rem; /* Space above card */
+  border-radius: 12px; /* Rounded corners for card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Add shadow for depth */
+  font-size: 14px; /* Set font size */
+
 }

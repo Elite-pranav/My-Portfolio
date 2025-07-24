@@ -1,35 +1,40 @@
 .resume {
-  background-color: #1e1e1e;
-  padding: 2rem;
-  color: #f0f0f0;
-  text-align: center;
-  animation: slideUp 0.6s ease-in-out;
+  background-color: #1e1e1e; /* Set resume section background color */
+  padding: 2rem; /* Add padding inside resume section */
+  color: #f0f0f0; /* Set text color */
+  text-align: center; /* Center align text */
+  animation: slideUp 0.6s ease-in-out; /* Animate section on load */
+  margin-top: 4rem; /* Space above resume section */
+  margin-left: 260px; /* Space to the left */
+  margin-right: 260px; /* Space to the right */
+  border-radius: 1rem;
 }
 
 .resume h2 {
-  color: #00ffc8;
-  margin-bottom: 1rem;
+  color: #00ffc8; /* Set heading color */
+  margin-bottom: 1rem; /* Space below heading */
 }
 
 .resume-preview img {
-  max-width: 300px;
-  border-radius: 10px;
-  margin: 1rem auto;
-  box-shadow: 0 0 15px rgba(0, 255, 200, 0.2);
+  max-width: 300px; /* Maximum width for resume image */
+  border-radius: 10px; /* Rounded corners for image */
+  margin: 1rem auto; /* Space around image and center it */
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.2); /* Add shadow to image */
 }
 
 .download-button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background-color: #00ffc8;
-  color: black;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  display: inline-block; /* Make button inline block */
+  margin-top: 1rem; /* Space above button */
+  padding: 0.8rem 1.5rem; /* Padding inside button */
+  background-color: #00ffc8; /* Button background color */
+  color: black; /* Button text color */
+  border-radius: 8px; /* Rounded corners for button */
+  font-weight: bold; /* Bold button text */
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 .download-button:hover {
-  background-color: #00c2a8;
+  background-color: #00c2a8; /* Change button color on hover */
+
 }

@@ -1,34 +1,34 @@
 .navbar {
-  background-color: #2c2c2c;
-  padding:1rem 2rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  font-family: 'DotGothic16', monospace;
-  margin: 0 150px; 
+  background-color: #2c2c2c; /* Set navbar background color */
+  padding:1rem 2rem; /* Add padding to navbar */
+  border-bottom-left-radius: 10px; /* Round bottom left corner */
+  border-bottom-right-radius: 10px; /* Round bottom right corner */
+  position: sticky; /* Make navbar stick to top on scroll */
+  top: 0; /* Stick to top of viewport */
+  z-index: 1000; /* Ensure navbar stays above other elements */
+  font-family: 'DotGothic16', monospace; /* Set font style */
+  margin: 0 150px; /* Add horizontal margin */
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 8rem;
-  margin: 0;
-  padding: 10px;
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center nav links horizontally */
+  gap: 8rem; /* Space between nav links */
+  margin: 0; /* Remove default margin */
+  padding: 10px; /* Add padding around nav links */
 }
 
 .nav-item {
-  cursor: pointer;
-  font-weight: bold;
-  color: rgb(116, 116, 116);
-  transition: color 0.3s ease;
-  font-family: 'DotGothic16', monospace;
-  font-size: 1.2rem;
-
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-weight: bold; /* Make text bold */
+  color: rgb(116, 116, 116); /* Set nav item text color */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  font-family: 'DotGothic16', monospace; /* Set font style */
+  font-size: 1.2rem; /* Set font size */
 }
 
 .nav-item:hover {
-  color: #ffffff; /* Cyan on hover */
+  color: #ffffff; /* Change color to white on hover */
+
 }

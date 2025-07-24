@@ -1,32 +1,108 @@
-.techstack {
-  background-color: #1e1e1e;
-  padding: 2rem;
-  color: #f0f0f0;
-  font-size: 1.2rem;
-  animation: slideUp 0.6s ease-in-out;
+.techstack { 
+  background-color: #1e1e1e; /* Set background color for tech stack section */
+  padding: 1rem; /* Add padding inside section */
+  color: #f0f0f0; /* Set text color */
+  font-size: 1.2rem; /* Set base font size */
+  animation: slideUp 0.6s ease-in-out; /* Animate section on load */
+  margin-top: 80px; /* Space above section */
+  margin-left: 120px; /* Space to the left */
+  margin-right: 120px; /* Space to the right */
+  border-radius: 12px; /* Rounded corners */
 }
 
 .techstack h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #00ffc8;
+  margin-bottom: 1rem; /* Space below heading */
+  margin-top: rem; /* (Typo: should specify a value) */
+  color: #b3b3b3; /* Set heading color */
+  text-align: center; /* Center align heading */
+  font-size: 3rem; /* Large heading font size */
 }
 
 .techstack ul {
-  list-style: none;
-  padding-left: 0;
+  display: grid; /* Use grid layout for tech stack items */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in grid */
+  gap: 2rem; /* Space between grid items */
+  list-style: none; /* Remove default list styling */
+  padding-left: 0; /* Remove left padding */
+  margin: 0 auto; /* Center the grid */
+  max-width: 900px; /* Maximum width for grid */
 }
-
 .techstack li {
-  margin-bottom: 0.5rem;
-  padding: 0.3rem 0.5rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  transition: background-color 0.3s;
+  display: flex; /* Use flexbox for item layout */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  height: 120px; /* Set height for each box */
+  font-size: 2rem; /* Set font size for icons/text */
+  background-color: rgba(255, 255, 255, 0.08); /* Set background color with opacity */
+  border-radius: 16px; /* Rounded corners for box */
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15); /* Add shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions on hover */
 }
 
 .techstack li:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 255, 200, 0.15); /* Change background color on hover */
+  transform: translateY(-6px) scale(1.04); /* Slightly lift and scale on hover */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%); /* Start below the viewport */
+    opacity: 0; /* Start invisible */
+  }
+  to {
+    transform: translateY(0%); /* End at original position */
+    opacity: 1; /* End fully visible */
+  }
+}
+
+
+
+
+/*
+.techstack {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  color: #f0f0f0;
+  font-size: 1.2rem;
+  animation: slideUp 0.6s ease-in-out;
+  margin: 80px auto;
+  border-radius: 12px;
+  max-width: 1200px;
+  width: 90%; 
+}
+
+.techstack h2 {
+  margin-bottom: 1rem;
+  color: #b3b3b3;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.techstack ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.techstack li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.techstack li:hover {
+  background-color: rgba(0, 255, 200, 0.15);
+  transform: translateY(-6px) scale(1.04);
 }
 
 @keyframes slideUp {
@@ -39,3 +115,35 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 900px) {
+  .techstack ul {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .techstack li {
+    height: 100px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .techstack {
+    padding: 0.80rem;
+  }
+
+  .techstack h2 {
+    font-size: 2rem;
+  }
+
+  .techstack ul {
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 1rem;
+  }
+
+  .techstack li {
+    height: 90px;
+    font-size: 1.3rem;
+  }
+}
+*/

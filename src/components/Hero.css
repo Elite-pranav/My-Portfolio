@@ -1,39 +1,41 @@
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem 5rem;
-  background-color: #000;
-  color: #fff;
-  font-family: 'DotGothic16', monospace;
+.hero { /* Container for hero section */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Vertically center items */
+  padding: 3rem 5rem; /* Padding around the hero section */
+  background-color: #000; /* Black background */
+  color: #fff; /* White text color */
+  font-family: 'DotGothic16', monospace; /* Font style */
 }
 
-.hero-left {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero-left { /* Left side of hero section */
+  flex: 1; /* Take up 1 part of flex space */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
-.profile-pic {
-  width: 450px;
-  height: 450px;
-  border-radius: 250%;
-  border: 2px solid gray;
-  object-fit: cover;
+.profile-pic { /* Profile picture styling */
+  width: 450px; /* Set width */
+  height: 450px; /* Set height */
+  border-radius: 250%; /* Make image circular */
+  border: 2px solid gray; /* Add gray border */
+  object-fit: cover; /* Ensure image covers area */
+  margin-top: 3rem;
 }
 
-.hero-right {
-  flex: 1.5;
-  padding-left: 2rem;
+.hero-right { /* Right side of hero section */
+  flex: 1.5; /* Take up 1.5 parts of flex space */
+  padding-left: 2rem; /* Space to the left */
 }
 
-.name {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.name { /* Name/title styling */
+  font-size: 4rem; /* Large font size */
+  margin-bottom: 2rem; /* Space below name */
+  text-align: center;
 }
 
-.about {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.about { /* About/description styling */
+  font-size: 1.5rem; /* Medium font size */
+  line-height: 1.6; /* Increase line spacing */
 }

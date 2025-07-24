@@ -1,21 +1,25 @@
-import React from 'react';
-import './Hero.css';
-import profileImg from '../assets/profile.jpg'; // Add your image in src/assets/
+import React from 'react'; // Import React library
+import './Hero.css'; // Import CSS for styling
+import profileImg from '../assets/profile.jpg'; // Import profile image
 
-const Hero = () => {
+const Hero = () => { // Define Hero functional component
   return (
-    <section className="hero">
-      <div className="hero-left">
-        <img src={profileImg} alt="Profile" className="profile-pic" />
+    <section className="hero"> {/* Main hero section container */}
+      <div className="hero-left"> {/* Left side of hero section */}
+        <img src={profileImg} alt="Profile" className="profile-pic" /> {/* Profile image */}
       </div>
-      <div className="hero-right">
-        <h1 className="name">Pranav Malvi</h1>
+      <div className="hero-right"> {/* Right side of hero section */}
+        <h1 className="name">Pranav Malvi</h1> {/* Name/title */}
         <p className="about">
-          I'm a passionate developer with experience in building modern web applications. I enjoy crafting beautiful, responsive, and accessible front-end experiences. Currently exploring the React ecosystem and building exciting UI projects.
+          {/* About/description text */}
+          Energetic and ambitious student pursuing a B.Tech degree with a passion for Information Technology. Demonstrated proficiency in
+          Java, C++ and Python languages. Proactive learner with a keen ability to adapt to new challenges. Excited to apply academic
+          knowledge in a practical setting and contribute positively. Interested and actively working in the AI, Machine Learning, and Generative
+          AI domains.
         </p>
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default Hero; // Export
